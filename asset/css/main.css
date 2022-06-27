@@ -673,6 +673,10 @@ body::selection {
   right: 0px;
   bottom: 0px;
   left: 0px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0px;
   border-width: 4px;
   --tw-border-opacity: 1;
   border-color: rgb(26 26 26 / var(--tw-border-opacity));
@@ -988,7 +992,7 @@ body::selection {
 
 .peer:checked ~ .peer-checked\:opacity-100 {
   opacity: 1;
-  }
+}
 
 @media (min-width: 420px) {
 
