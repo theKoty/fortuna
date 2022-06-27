@@ -41,7 +41,7 @@
             </div>
           </div>
           <div class="mt-10">
-            <div class="box" data-masonry="{ &quot;itemSelector&quot;: &quot;.box-item&quot;, &quot;percentPosition&quot;: true }">
+            <div class="box">
               <div class="box-item w-1/2 md:w-1/6"><a class="hover:opacity-90" href="#"><img class="w-full" src="https://dummyimage.com/200x300/b2b2b2/fff.png&amp;text=small" alt=""></a></div>
               <div class="box-item w-1/2 md:w-1/6"><a class="hover:opacity-90" href="#"><img class="w-full" src="https://dummyimage.com/200x300/292929/fff.png&amp;text=small" alt=""></a></div>
               <div class="box-item w-2/2 md:w-2/6"><a class="hover:opacity-90" href="#"><img class="w-full" src="https://dummyimage.com/400x300/3c3c3c/fff.png&amp;text=+medium+" alt=""></a></div>
@@ -64,5 +64,15 @@
     <script src="/asset/js/splide.min.js"></script>
     <script src="/bundle.js"></script>
     <script src="/asset/js/masonry.min.js"> </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function() {
+          $('.box').masonry({
+            itemSelector: '.box-item',
+            percentPosition: true,
+          })
+        }, 100)
+      })
+    </script>
   </body>
 </html>
