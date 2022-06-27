@@ -18,9 +18,18 @@
   </head>
   <body>
     <header class="header">
-      <div class="container relative">
+      <div class="container relative flex justify-between items-center md:items-start">
         <div class="relative"><a href="/"><img class="header__logo" src="/asset/image/logo.png" alt="Sportovní hala Fortuna"></a></div>
-        <nav class="md:absolute mt-3 -top-2 right-8 space-x-3 sm:space-x-4 -ml-2 md:ml-0"><a class="inline-block p-2 text-white hover:text-orange" href="/kalendar.html">kalendář akcí</a><a class="inline-block p-2 text-white hover:text-orange" href="/galerie.html">galerie</a><a class="inline-block p-2 text-white hover:text-orange" href="/kontakt.html">kontakt</a></nav>
+        <label class="cursor-pointer transition text-white hover:text-orange md:hidden" for="navTrigger">
+          <div class="space-y-1.5 p-3 -mr-3"><span class="w-6 bg-current h-0.5 block"></span><span class="w-6 bg-current h-0.5 block"></span><span class="w-6 bg-current h-0.5 block"></span></div>
+        </label>
+        <input class="peer sr-only md:hidden" id="navTrigger" data-js="trigger" type="checkbox">
+        <div class="fixed transition opacity-0 md:!opacity-100 md:!visible inset-0 bg-black md:bg-transparent h-screen w-screen md:w-auto md:h-auto peer-checked:opacity-100 invisible peer-checked:visible md:static md:mt-1 flex flex-col md:flex-row justify-center md:justify-start items-center">
+          <label class="cursor-pointer absolute right-5 top-6 text-white hover:text-orange transition md:hidden" for="navTrigger">
+            <div class="space-y-1.5"><span class="w-6 bg-current h-0.5 block origin-top-right -rotate-45"></span><span class="w-6 bg-current h-0.5 block invisible"></span><span class="w-6 bg-current h-0.5 block origin-bottom-right rotate-45"></span></div>
+          </label>
+          <nav class="flex flex-col md:flex-row justify-center md:justify-start items-center md:space-x-4 lg:space-x-6 "><a class="md:hidden inline-block p-2 text-white hover:text-orange" href="/">hlavní stránka</a><a class="inline-block p-2 text-white hover:text-orange" href="/kalendar.html">kalendář akcí</a><a class="inline-block p-2 text-white hover:text-orange" href="/galerie.html">galerie</a><a class="inline-block p-2 text-white hover:text-orange" href="/kontakt.html">kontakt</a></nav>
+        </div>
       </div>
     </header>
     <main>
