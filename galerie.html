@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/asset/css/styles.min.css">
     <link rel="stylesheet" href="/asset/css/main.css">
+    <link rel="stylesheet" href="/asset/css/lightbox.min.css">
   </head>
   <body>
     <header class="header">
@@ -42,15 +43,28 @@
           </div>
           <div class="mt-10">
             <div class="box">
-              <div class="box-item w-1/2 md:w-1/6"><a class="hover:opacity-90" href="#"><img class="w-full" src="https://dummyimage.com/200x300/b2b2b2/fff.png&amp;text=small" alt=""></a></div>
-              <div class="box-item w-1/2 md:w-1/6"><a class="hover:opacity-90" href="#"><img class="w-full" src="https://dummyimage.com/200x300/292929/fff.png&amp;text=small" alt=""></a></div>
-              <div class="box-item w-2/2 md:w-2/6"><a class="hover:opacity-90" href="#"><img class="w-full" src="https://dummyimage.com/400x300/3c3c3c/fff.png&amp;text=+medium+" alt=""></a></div>
-              <div class="box-item w-2/2 md:w-2/6"><a class="hover:opacity-90" href="#"><img class="w-full" src="https://dummyimage.com/400x600/e3242b/fff.png&amp;text=+big+" alt=""></a></div>
-              <div class="box-item w-2/2 md:w-2/6"><a class="hover:opacity-90" href="#"><img class="w-full" src="https://dummyimage.com/400x600/e3242b/fff.png&amp;text=+big+" alt=""></a></div>
-              <div class="box-item w-2/2 md:w-2/6"><a class="hover:opacity-90" href="#"><img class="w-full" src="https://dummyimage.com/400x300/3c3c3c/fff.png&amp;text=+medium+" alt=""></a></div>
-              <div class="box-item w-2/2 md:w-2/6"><a class="hover:opacity-90" href="#"><img class="w-full" src="https://dummyimage.com/400x300/3c3c3c/fff.png&amp;text=+medium+" alt=""></a></div>
-              <div class="box-item w-1/2 md:w-1/6"><a class="hover:opacity-90" href="#"><img class="w-full" src="https://dummyimage.com/200x300/292929/fff.png&amp;text=small" alt=""></a></div>
-              <div class="box-item w-1/2 md:w-1/6"><a class="hover:opacity-90" href="#"><img class="w-full" src="https://dummyimage.com/200x300/b2b2b2/fff.png&amp;text=small" alt=""></a></div>
+              <div class="box-item w-1/2 md:w-1/6">
+                <!-- Image URL has to be specified in a(href) and img(src)-->
+                <!-- `data-lightbox` specify image sets (group related images)-->
+                <!-- `data-title` can be omitted but also used as a photo description--><a class="group" href="https://dummyimage.com/200x300/b2b2b2/fff.png&amp;text=+" data-lightbox="group-of-images" data-title="My caption">
+                  <p class="transition bg-black/0 group-hover:bg-black/70 opacity-0 group-hover:opacity-100 backdrop-blur-sm absolute inset-0 text-white flex justify-center py-10 px-4 text-lg">headline</p><img class="w-full" src="https://dummyimage.com/200x300/b2b2b2/fff.png&amp;text=+" alt=""></a>
+              </div>
+              <div class="box-item w-1/2 md:w-1/6"><a class="group" href="https://dummyimage.com/200x300/292929/fff.png&amp;text=+" data-lightbox="group-of-images" data-title="My caption">
+                  <p class="transition bg-black/0 group-hover:bg-black/70 opacity-0 group-hover:opacity-100 backdrop-blur-sm absolute inset-0 text-white flex justify-center py-10 px-4 text-lg">headline</p><img class="w-full" src="https://dummyimage.com/200x300/292929/fff.png&amp;text=+" alt=""></a></div>
+              <div class="box-item w-2/2 md:w-2/6"><a class="group" href="https://dummyimage.com/400x300/3c3c3c/fff.png&amp;text=+" data-lightbox="group-of-images" data-title="My caption">
+                  <p class="transition bg-black/0 group-hover:bg-black/70 opacity-0 group-hover:opacity-100 backdrop-blur-sm absolute inset-0 text-white flex justify-center py-10 px-4 text-lg">headline</p><img class="w-full" src="https://dummyimage.com/400x300/3c3c3c/fff.png&amp;text=+" alt=""></a></div>
+              <div class="box-item w-2/2 md:w-2/6"><a class="group" href="https://dummyimage.com/400x600/e3242b/fff.png&amp;text=+" data-lightbox="group-of-images" data-title="My caption">
+                  <p class="transition bg-black/0 group-hover:bg-black/70 opacity-0 group-hover:opacity-100 backdrop-blur-sm absolute inset-0 text-white flex justify-center py-10 px-4 text-lg">headline</p><img class="w-full" src="https://dummyimage.com/400x600/e3242b/fff.png&amp;text=+" alt=""></a></div>
+              <div class="box-item w-2/2 md:w-2/6"><a class="group" href="https://dummyimage.com/400x600/e3242b/fff.png&amp;text=+" data-lightbox="group-of-images" data-title="My caption">
+                  <p class="transition bg-black/0 group-hover:bg-black/70 opacity-0 group-hover:opacity-100 backdrop-blur-sm absolute inset-0 text-white flex justify-center py-10 px-4 text-lg">headline</p><img class="w-full" src="https://dummyimage.com/400x600/e3242b/fff.png&amp;text=+" alt=""></a></div>
+              <div class="box-item w-2/2 md:w-2/6"><a class="group" href="https://dummyimage.com/400x300/3c3c3c/fff.png&amp;text=+" data-lightbox="group-of-images" data-title="My caption">
+                  <p class="transition bg-black/0 group-hover:bg-black/70 opacity-0 group-hover:opacity-100 backdrop-blur-sm absolute inset-0 text-white flex justify-center py-10 px-4 text-lg">headline</p><img class="w-full" src="https://dummyimage.com/400x300/3c3c3c/fff.png&amp;text=+" alt=""></a></div>
+              <div class="box-item w-2/2 md:w-2/6"><a class="group" href="https://dummyimage.com/400x300/3c3c3c/fff.png&amp;text=+" data-lightbox="group-of-images" data-title="My caption">
+                  <p class="transition bg-black/0 group-hover:bg-black/70 opacity-0 group-hover:opacity-100 backdrop-blur-sm absolute inset-0 text-white flex justify-center py-10 px-4 text-lg">headline</p><img class="w-full" src="https://dummyimage.com/400x300/3c3c3c/fff.png&amp;text=+" alt=""></a></div>
+              <div class="box-item w-1/2 md:w-1/6"><a class="group" href="https://dummyimage.com/200x300/292929/fff.png&amp;text=+" data-lightbox="group-of-images" data-title="My caption">
+                  <p class="transition bg-black/0 group-hover:bg-black/70 opacity-0 group-hover:opacity-100 backdrop-blur-sm absolute inset-0 text-white flex justify-center py-10 px-4 text-lg">headline</p><img class="w-full" src="https://dummyimage.com/200x300/292929/fff.png&amp;text=+" alt=""></a></div>
+              <div class="box-item w-1/2 md:w-1/6"><a class="group" href="https://dummyimage.com/200x300/b2b2b2/fff.png&amp;text=+" data-lightbox="group-of-images" data-title="My caption">
+                  <p class="transition bg-black/0 group-hover:bg-black/70 opacity-0 group-hover:opacity-100 backdrop-blur-sm absolute inset-0 text-white flex justify-center py-10 px-4 text-lg">headline</p><img class="w-full" src="https://dummyimage.com/200x300/b2b2b2/fff.png&amp;text=+" alt=""></a></div>
             </div>
           </div>
         </div>
@@ -63,15 +77,24 @@
     <script src="/asset/js/jquery.min.js"></script>
     <script src="/asset/js/splide.min.js"></script>
     <script src="/bundle.js"></script>
+    <script src="/asset/js/lightbox.min.js"> </script>
+    <script src="/asset/js/imagesLoaded.min.js"> </script>
     <script src="/asset/js/masonry.min.js"> </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(function() {
+        $('.box').imagesLoaded( function() {
           $('.box').masonry({
             itemSelector: '.box-item',
             percentPosition: true,
           })
-        }, 100)
+        })
+      
+        lightbox.option({
+          'albumLabel': 'Fotografie %1 z %2',
+          'imageFadeDuration': 200,
+          'resizeDuration': 200,
+          'wrapAround': true
+        })
       })
     </script>
   </body>

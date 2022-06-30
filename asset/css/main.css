@@ -359,6 +359,10 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-black\/0 {
+  background-color: rgb(20 20 20 / 0);
+}
+
 .bg-darkBlack {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -545,6 +549,12 @@
 
 .opacity-0 {
   opacity: 0;
+}
+
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition {
@@ -984,6 +994,14 @@ body::selection {
 .focus\:ring-orange:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(246 156 44 / var(--tw-ring-opacity));
+}
+
+.group:hover .group-hover\:bg-black\/70 {
+  background-color: rgb(20 20 20 / 0.7);
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
 }
 
 .peer:checked ~ .peer-checked\:visible {
