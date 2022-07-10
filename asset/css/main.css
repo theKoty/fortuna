@@ -102,6 +102,10 @@
   margin-top: 2rem !important;
 }
 
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .-mr-3 {
   margin-right: -0.75rem;
 }
@@ -190,6 +194,10 @@
   max-width: 36rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -218,6 +226,14 @@
 
 .resize-none {
   resize: none;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .grid-cols-6 {
@@ -435,6 +451,11 @@
   padding-right: 1rem;
 }
 
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -457,6 +478,10 @@
 
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-left {
