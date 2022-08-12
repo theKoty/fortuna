@@ -446,6 +446,16 @@
   padding-bottom: 3.5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1061,12 +1071,28 @@ body::selection {
     position: static;
   }
 
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:top-full {
+    top: 100%;
+  }
+
+  .md\:right-1\/2 {
+    right: 50%;
+  }
+
   .md\:order-none {
     order: 0;
   }
 
   .md\:mt-1 {
     margin-top: 0.25rem;
+  }
+
+  .md\:inline-block {
+    display: inline-block;
   }
 
   .md\:table-row {
@@ -1091,6 +1117,15 @@ body::selection {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-52 {
+    width: 13rem;
+  }
+
+  .md\:translate-x-1\/2 {
+    --tw-translate-x: 50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:grid-cols-3 {
@@ -1127,9 +1162,23 @@ body::selection {
     padding: 0px;
   }
 
+  .md\:p-2 {
+    padding: 0.5rem;
+  }
+
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .md\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .md\:pr-6 {
@@ -1138,6 +1187,10 @@ body::selection {
 
   .md\:pt-11 {
     padding-top: 2.75rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-xl {
@@ -1167,6 +1220,10 @@ body::selection {
   .md\:after\:content-\[\"_-\"\]::after {
     --tw-content: " -";
     content: var(--tw-content);
+  }
+
+  .group:hover .md\:group-hover\:flex {
+    display: flex;
   }
 }
 
